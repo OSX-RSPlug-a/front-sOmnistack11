@@ -1,0 +1,87 @@
+
+.card2 {
+  display: flex;
+  flex-direction: row;
+  background: #ffffff;
+  overflow: hidden;
+  box-shadow:
+  4px 4px 4px 4px #d1d9e6 inset,
+  -4px -4px 4px 4px #eee inset;
+  padding: 30px 20px;
+  width: 1200px;
+  height: 80vh;
+  margin: 120px auto;
+}
+
+.register-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 1100px;
+    height: 100%;
+    margin: 0 auto;
+}
+  
+.register-container .content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 96px;
+    background-color: #f0f0f5;
+    box-shadow: 0 0 100px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+  
+.register-container .content section {
+    width: 100%;
+    max-width: 380px;
+}
+  
+.register-container .content section h1 {
+    margin: 64px 0 32px;
+    font-size: 32px;
+}
+  
+.register-container .content section p {
+    font-size: 18px;
+    color: #737380;
+    line-height: 32px;
+}
+  
+.register-container .content form {
+    width: 100%;
+    max-width: 450px;
+}
+  
+.register-container .content form input {
+    margin-top: 8px;
+}
+  
+.register-container .content form .input-group {
+    display: flex;
+}
+  
+.register-container .content form .input-group input + input {
+    margin-left: 8px;
+}
+
+@media screen and (max-width: 480px) {
+    .card2 {
+        display: flexbox;
+        flex-direction: column;
+        width: 90%;
+        height: 100%;
+    }
+
+    .register-container {
+        display: block;
+    }
+
+    .register-container .content {
+      display: block;
+      padding: 10px;
+    }
+
+}

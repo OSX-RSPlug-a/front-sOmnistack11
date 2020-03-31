@@ -1,0 +1,168 @@
+
+.profile-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 0 30px;
+    margin: 32px auto;
+}
+  
+.profile-container header {
+    display: flex;
+    align-items: center;
+}
+  
+.profile-container header span {
+    font-size: 20px;
+    margin-left: 24px;
+}
+  
+.profile-container header img {
+    height: 64px;
+}
+  
+.profile-container header a {
+    width: 260px;
+    margin-left: 50px;
+    margin-top: 0;
+}
+  
+.profile-container header button {
+    height: 60px;
+    width: 60px;
+    border-radius: 4px;
+    border: 1px solid #dcdce6;
+    background: transparent;
+    margin-left: 50px;
+    transition: border-color 0.2s;
+}
+  
+.profile-container header button:hover {
+    border-color: #999;
+}
+  
+.profile-container h1 {
+    margin-top: 80px;
+    margin-bottom: 24px;
+}
+  
+.profile-container ul {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 24px;
+    list-style: none;
+}
+
+.results {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.cards {
+    display: flex;
+    flex-direction: column;
+    background: #ffffff;
+    overflow: hidden;
+    box-shadow:
+    4px 4px 4px 4px #d1d9e6 inset,
+    -4px -4px 4px 4px #eee inset;
+    padding: 30px 20px;
+    width: 400px;
+    height: 400px;
+    margin: auto;
+}
+
+.profile-container li {
+    background-color: #fff;
+    padding: 24px;
+    border-radius: 8px;
+    position: relative;
+    list-style: none;
+}
+  
+.profile-container li button {
+  border-radius: 5px;
+    margin-top: 2vh;
+    padding: 25px;
+    border: 0;
+    width: 25%;
+}
+  
+.profile-container li button:hover {
+    opacity: 0.8;
+}
+  
+.profile-container li strong {
+    display: block;
+    margin-bottom: 16px;
+    color: #41414d;
+}
+  
+.profile-container li p + strong {
+    margin-top: 32px;
+}
+  
+.profile-container li p {
+    color: #737380;
+    line-height: 21px;
+    font-size: 16px;;
+}
+
+@media screen and (max-width: 480px) {
+  .profile-container {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      align-content: center;
+      text-align: center;
+      margin: auto;
+      width: 98%;
+  }
+
+  .profile-container  header {
+      display: flex;
+      flex-direction: column;
+  }
+
+  .profile-container header span {
+      margin-top: 2vh;
+  }
+    
+  .profile-container header img {
+      margin-top: 2vh;
+  }
+    
+  .profile-container header a {
+      margin-top: 2vh;
+      margin-left: auto;
+  }
+
+  .profile-container header button {
+      margin: 2vh auto;
+  }
+
+  .results {
+      display: flex;
+      flex-direction: column;
+  }
+
+  .cards {
+      display: flex;
+      flex-direction: column;
+      width: 95%;
+      height: 100%;
+      margin: 1%;
+  }
+
+  .register-container {
+      display: block;
+  }
+
+  .register-container .content {
+      display: block;
+      padding: 10px;
+  }
+
+}
